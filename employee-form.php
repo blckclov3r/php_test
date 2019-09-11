@@ -1,3 +1,7 @@
+<?php
+	include 'action.php';
+?>
+
 <!doctype html>
 <html class="no-js" lang="en">
     <head>

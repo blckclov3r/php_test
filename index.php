@@ -1,4 +1,6 @@
-
+<?php
+    include 'action.php';
+?>
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -21,7 +23,7 @@
 
     		
     		<div class="btnAddNew">
-    			<a href="addupdate.php" type="button" class="btn btn-info">Add New</a>
+    			<a href="employee-form.php" type="button" class="btn btn-info">Add New</a>
     		</div>
     	
     		<div style="display: block; content:''; clear: both;">
@@ -29,7 +31,7 @@
     		<div class="col-md-1"></div>
     		<div class="col-md-10">
     			<form method="POST" action="">
-    				<table class="table table-hover">
+    				<table class="table table-hover table-bordered table-responsive d-table-cell">
     					<tr>
     						<th>#</th>
     						<th>Name</th>
@@ -38,7 +40,27 @@
     						<th>Sex</th>
     						<th>Employee type</th>
     						<th>Action</th>
-    					</tr>
+    					</tr> 
+                        <?php
+                            $myrow = $obj->fetch_record("employees");
+                            foreach ($myrow as $row) {
+                                ?>
+                                     <tr>
+                                        <td><?php echo $row['id'];?></td>
+                                        <td><?php echo $row['name'];?></td>
+                                        <td><?php echo $row['email'];?>/td>
+                                        <td><?php echo $row['phone'];?></td>
+                                        <td><?php echo $row['sex'];?></td>
+                                        <td><?php echo $row['employeeType'];?></td>
+                                        <td >
+                                            <a href="#" class="btn btn-info">Edit</a>
+                                            <a href="#" class="btn btn-danger">Delete</a>
+                                        </td>
+                                     </tr>
+                                <?php
+                            }
+                        ?>
+                       
     				</table>
     			</form>
     		</div>

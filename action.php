@@ -17,6 +17,16 @@
 				return false;
 			}
 		}
+
+		public function fetch_record($table){
+			$sql = "SELECT * FROM ".$table;
+			$array = array();
+			$query = mysqli_query($this->conn, $sql);
+			while($row = mysqli_fetch_assoc($query)){
+				$array[] = $row;
+			}
+			return $array;
+		}
 	}
 
 	$obj = new DatabaseOperation();

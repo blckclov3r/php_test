@@ -16,7 +16,7 @@
     <body>
         
 		<div class="jumbotron">
-    		<center><h3>Employee List</h3></center>
+    		<center><h2>Employee List</h2></center>
     	</div>
 
     	<div class="container">

@@ -11,11 +11,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="css/addupdate-style.css">
     </head>
     <body>
     	<div class="jumbotron">
-    		<center><h3>Employee Add / Edit</h3></center>
+    		<center><h2>Employee Add / Edit</h2></center>
     	</div>
 
         <div class="container">
@@ -61,11 +60,7 @@
 						        				<p><center>Address</center></p>
 						        			</td>
 						        			<td>
-						        				<textarea class="form-control" name="address" placeholder="Address" type="text">
-						        					<?php
-						        						echo $row['address'];
-						        					?>
-						        				</textarea>
+						        				<input type="text" class="form-control" name="address" value="<?php echo $row['address'];?>"> 
 						        			</td>
 						        		</tr>
 						        		<tr>
@@ -143,8 +138,7 @@
 		        				<p><center>Address</center></p>
 		        			</td>
 		        			<td>
-		        				<textarea class="form-control" name="address" placeholder="Address" type="text">
-		        				</textarea>
+		        				<input class="form-control" name="address" placeholder="Address" type="text">
 		        			</td>
 		        		</tr>
 		        		<tr>

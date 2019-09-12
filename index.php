@@ -23,7 +23,7 @@
 
     		
     		<div class="btnAddNew">
-    			<a href="employee-form.php?add" type="button" class="btn btn-info">Add New</a>
+    			<a href="employee-form.php?add" type="button" class="btn btn-primary">Add New</a>
     		</div>
     	
     		<div style="display: block; content:''; clear: both;">

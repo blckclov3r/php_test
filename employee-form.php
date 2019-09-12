@@ -36,7 +36,7 @@
 						        				<p><center>Name</center></p>
 						        			</td>
 						        			<td>
-						        				<input class="form-control" placeholder="Fullname" name="fname" type="text" value="<?php echo $row['name'];?>" required />
+						        				<input type="text" class="form-control" placeholder="Fullname" name="fname" type="text" value="<?php echo $row['name'];?>" required />
 						        			</td>
 						        		</tr>
 						        		<tr>
@@ -44,7 +44,7 @@
 						        				<p><center>Email</center></p>
 						        			</td>
 						        			<td>
-						        				<input class="form-control" placeholder="Email" name="email" type="text" value="<?php echo $row['email'];?>"
+						        				<input type="email" class="form-control" placeholder="Email" name="email" type="text" value="<?php echo $row['email'];?>"
 						        				required />
 						        			</td>
 						        		</tr>
@@ -53,7 +53,7 @@
 						        				<p><center>Phone</center></p>
 						        			</td>
 						        			<td>
-						        				<input class="form-control" placeholder="Phone" name="phone" type="text" value="<?php echo $row['phone'];?>"
+						        				<input type="number" class="form-control" placeholder="Phone" name="phone" type="text" value="<?php echo $row['phone'];?>"
 						        				required />
 						        			</td>
 						        		</tr>
@@ -102,7 +102,7 @@
 						        		<tr>
 						        			<td></td>
 						        			<td align="center">
-						        				<input class="btn btn-primary" type="submit" name="update" value="Update">
+						        				<input class="btn btn-info" type="submit" name="update" value="Update">
 						        			</td>
 						        		</tr>
 					        		</table>
@@ -116,7 +116,7 @@
 		        				<p><center>Name</center></p>
 		        			</td>
 		        			<td>
-		        				<input class="form-control" placeholder="Fullname" name="fname" type="text" required />
+		        				<input type="name" class="form-control" placeholder="Fullname" name="fname" type="text" required />
 		        			</td>
 		        		</tr>
 		        		<tr>
@@ -124,7 +124,7 @@
 		        				<p><center>Email</center></p>
 		        			</td>
 		        			<td>
-		        				<input class="form-control" placeholder="Email" name="email" type="text" required />
+		        				<input type="email" class="form-control" placeholder="Email" name="email" type="text" required />
 		        			</td>
 		        		</tr>
 		        		<tr>
@@ -132,7 +132,7 @@
 		        				<p><center>Phone</center></p>
 		        			</td>
 		        			<td>
-		        				<input class="form-control" placeholder="Phone" name="phone" type="text" required />
+		        				<input type="number" class="form-control" placeholder="Phone" name="phone" type="text" required />
 		        			</td>
 		        		</tr>
 		        		<tr>
@@ -140,7 +140,7 @@
 		        				<p><center>Address</center></p>
 		        			</td>
 		        			<td>
-		        				<input class="form-control" name="address" placeholder="Address" type="text" required /> 
+		        				<input type="text" class="form-control" name="address" placeholder="Address" required /> 
 		        			</td>
 		        		</tr>
 		        		<tr>

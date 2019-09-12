@@ -39,7 +39,8 @@
     						<th>Phone</th>
     						<th>Sex</th>
     						<th>Employee type</th>
-    						<th>Action</th>
+    						<th>&nbsp;</th>
+                            <th>&nbsp;</th>
     					</tr> 
                         <?php
                             $myrow = $obj->fetch_record("employees");
@@ -53,8 +54,10 @@
                                         <td><?php echo $row['sex'];?></td>
                                         <td><?php echo $row['employeeType'];?></td>
                                         <td >
-                                            <a href="employee-form.php?update=1&id=<?php echo $row['id']?>" class="btn btn-info">Edit</a>
-                                            <a href="#" class="btn btn-danger">Delete</a>
+                                            <a href="employee-form.php?update=1&id=<?php echo $row['id'];?>" class="btn btn-info">Edit</a>
+                                        </td>
+                                        <td>
+                                             <a href="employee-delete.php?delete=1&id=<?php echo $row['id'];?>" class="btn btn-danger">Delete</a>
                                         </td>
                                      </tr>
                                 <?php

@@ -27,6 +27,20 @@
 			}
 			return $array;
 		}
+
+		public function select_record($table,$where){
+			$sql = "";
+			$condition = "";
+			foreach($where as $key=>$value){
+				$condition .= $key ."='".$value."' AND ";
+			}
+			$condition = substr($condition, 0, -5);
+			$sql .= "SELECT * FROM ".$table." WHERE ".$condition;
+			// echo $sql;
+			$query = mysqli_query($this->conn,$sql);
+			$row = mysqli_fetch_array($query);
+			return $row;
+		}
 	}
 
 	$obj = new DatabaseOperation();
@@ -47,4 +61,6 @@
 			header("location: index.php?msg=insert-error");
 		}
 	}
+
+
 ?>

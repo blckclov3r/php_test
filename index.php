@@ -23,7 +23,7 @@
 
     		
     		<div class="btnAddNew">
-    			<a href="employee-form.php" type="button" class="btn btn-info">Add New</a>
+    			<a href="employee-form.php?add" type="button" class="btn btn-info">Add New</a>
     		</div>
     	
     		<div style="display: block; content:''; clear: both;">
@@ -48,12 +48,12 @@
                                      <tr>
                                         <td><?php echo $row['id'];?></td>
                                         <td><?php echo $row['name'];?></td>
-                                        <td><?php echo $row['email'];?>/td>
+                                        <td><?php echo $row['email'];?></td>
                                         <td><?php echo $row['phone'];?></td>
                                         <td><?php echo $row['sex'];?></td>
                                         <td><?php echo $row['employeeType'];?></td>
                                         <td >
-                                            <a href="#" class="btn btn-info">Edit</a>
+                                            <a href="employee-form.php?update=1&id=<?php echo $row['id']?>" class="btn btn-info">Edit</a>
                                             <a href="#" class="btn btn-danger">Delete</a>
                                         </td>
                                      </tr>

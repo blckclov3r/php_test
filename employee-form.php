@@ -94,8 +94,8 @@
 						        					<option value="<?php echo $row['employeeType'];?>">
 						        						<?php echo $row['employeeType'];?>
 						        					</option>
-						        					<option  value="full-time">Fulltime</option>
-						        					<option  value="part-time">Parttime</option>
+						        					<option  value="full-time">full-time</option>
+						        					<option  value="part-time">part-time</option>
 						        				</select>
 						        			</td>
 						        		</tr>
@@ -158,8 +158,8 @@
 		        			</td>
 		        			<td>
 		        				<select class="form-control" name="employeeType">
-		        					<option  value="full-time">Fulltime</option>
-		        					<option  value="part-time">Parttime</option>
+		        					<option  value="full-time">full-time</option>
+		        					<option  value="part-time">part-time</option>
 		        				</select>
 		        			</td>
 		        		</tr>

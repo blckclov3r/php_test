@@ -37,8 +37,8 @@
     						<th>Name</th>
     						<th>Email</th>
     						<th>Phone</th>
-    						<th>Sex</th>
-    						<th>Employee type</th>
+    						<th>Gender</th>
+    						<th>Type</th>
     						<th>&nbsp;</th>
                             <th>&nbsp;</th>
     					</tr> 
@@ -54,10 +54,14 @@
                                         <td><?php echo $row['sex'];?></td>
                                         <td><?php echo $row['employeeType'];?></td>
                                         <td >
-                                            <a href="employee-form.php?update=1&id=<?php echo $row['id'];?>" class="btn btn-info">Edit</a>
+                                            <center>
+                                                <a href="employee-form.php?update=1&id=<?php echo $row['id'];?>" class="btn btn-info">Edit</a>
+                                            </center>
                                         </td>
                                         <td>
-                                             <a href="employee-delete.php?delete=1&id=<?php echo $row['id'];?>" class="btn btn-danger">Delete</a>
+                                            <center>
+                                                <a href="employee-delete.php?delete=1&id=<?php echo $row['id'];?>" class="btn btn-danger">Delete</a>
+                                            </center>
                                         </td>
                                      </tr>
                                 <?php

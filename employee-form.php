@@ -30,6 +30,7 @@
         				$row = $obj->select_record("employees",$where);
         				?>
         						<form method="POST" action="action.php">
+        							<input type="hidden" name="id" value="<?php echo $row['id'];?>">
 					        		<table class="table table-responsive">
 						        		<tr>
 						        			<td>
@@ -104,7 +105,7 @@
 						        		<tr>
 						        			<td></td>
 						        			<td align="center">
-						        				<input class="btn btn-primary" type="submit" name="submit" value="Save">
+						        				<input class="btn btn-primary" type="submit" name="update" value="Update">
 						        			</td>
 						        		</tr>
 					        		</table>
